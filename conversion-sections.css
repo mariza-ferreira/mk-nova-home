@@ -1,0 +1,403 @@
+/* CTA claro: medidas e tipografia do frame "Parceiro especializado". */
+.partner-cta {
+  position: relative;
+  z-index: 2;
+  padding: 50px 32px;
+  background: #efefef;
+  color: #000;
+}
+
+.partner-cta__inner {
+  width: min(1320px, 100%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+}
+
+.partner-cta__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.partner-cta__title {
+  max-width: 520px;
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.partner-cta__copy p {
+  color: #555;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 22.4px;
+}
+
+.partner-cta__button {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 22.4px;
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.partner-cta__button:hover {
+  background: transparent;
+  color: #000;
+}
+
+/* Estatística 98/100. */
+.stats-section,
+.roi-factory {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+}
+
+.stats-section {
+  padding: clamp(120px, 15vw, 221px) 32px 110px;
+}
+
+.stats-section__inner {
+  width: min(1329px, 100%);
+  margin: 0 auto;
+}
+
+.stats-section__top {
+  display: grid;
+  grid-template-columns: minmax(390px, 517px) minmax(550px, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 76px;
+}
+
+.shopping-grid {
+  width: 100%;
+  aspect-ratio: 517 / 509;
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  grid-template-rows: repeat(10, minmax(0, 1fr));
+  gap: clamp(8px, 1.2vw, 17px) clamp(9px, 1.4vw, 20px);
+  list-style: none;
+}
+
+.shopping-grid__item {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  color: #494949;
+}
+
+.shopping-grid__item--active { color: #1291e2; }
+
+.shopping-grid__item svg {
+  display: block;
+  width: 100%;
+  max-width: 32px;
+  height: auto;
+}
+
+.stats-metric {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.stats-metric__number {
+  flex: 0 0 auto;
+  font-family: var(--font-heading);
+  font-size: clamp(170px, 16vw, 230px);
+  font-weight: 400;
+  line-height: .72;
+}
+
+.stats-metric__copy {
+  padding: 10px 0 0 14px;
+  min-width: 0;
+}
+
+.stats-metric__copy h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(50px, 5.2vw, 69px);
+  font-weight: 400;
+  line-height: 1.12;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.stats-metric__copy p {
+  margin-top: 4px;
+  font-family: var(--font-body);
+  font-size: 22px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.stats-metric__copy strong { font-weight: 700; }
+
+.stats-mission {
+  max-width: 859px;
+  margin: 70px auto 0;
+  font-family: var(--font-body);
+  font-size: clamp(34px, 3.1vw, 42px);
+  line-height: 1.1;
+  text-align: center;
+}
+
+.stats-mission strong {
+  font-family: var(--font-heading);
+  font-size: 1.12em;
+  font-weight: 400;
+}
+
+.stats-next {
+  margin: 68px auto 0;
+  font-family: var(--font-body);
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.conversion-spectrum,
+.roi-factory__spectrum {
+  background: linear-gradient(90deg, rgba(124,22,219,0), rgba(220,12,159,.83) 20%, #1291e2 40%, #fb5b12 60%, #00fc8a 80%, rgba(232,241,2,0));
+}
+
+.conversion-spectrum {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+}
+
+/* WooW ROI Factory. */
+.roi-factory {
+  padding: 110px 32px 90px;
+}
+
+.roi-factory__header {
+  width: min(1297px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.roi-brand {
+  position: relative;
+  width: 160px;
+  height: 30px;
+}
+
+.roi-brand img {
+  position: absolute;
+  max-width: none;
+  height: auto;
+}
+
+.roi-brand__mk { left: 0; top: 0; }
+.roi-brand__spark { left: 44px; top: 0; }
+.roi-brand__divider { left: 58px; top: 0; }
+.roi-brand__word { left: 65px; top: 7px; }
+
+.roi-factory__title {
+  margin-top: 34px;
+  font-family: var(--font-heading);
+  font-size: clamp(90px, 9vw, 124px);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.roi-factory__lead {
+  margin-top: 30px;
+  font-family: var(--font-body);
+  font-size: clamp(34px, 3.6vw, 48px);
+  line-height: 1.1;
+}
+
+.roi-factory__support {
+  max-width: 599px;
+  margin-top: 30px;
+  font-family: var(--font-body);
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.roi-factory__spectrum {
+  width: min(509px, 70vw);
+  height: 4px;
+  margin-top: 34px;
+}
+
+.roi-partners {
+  width: min(1264px, 100%);
+  margin: 148px auto 0;
+}
+
+.roi-partner-row {
+  min-height: 226px;
+  display: grid;
+  grid-template-columns: minmax(330px, 464px) minmax(0, 1fr);
+  align-items: center;
+  gap: 76px;
+  padding: 32px 0 64px;
+  border-bottom: 1px solid #666;
+}
+
+.roi-partner-row h3 {
+  color: #e0e0e5;
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 4.6vw, 64px);
+  font-weight: 400;
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+
+.roi-partner-row--last {
+  padding-bottom: 24px;
+  border-bottom: 0;
+}
+
+.roi-logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px 32px;
+  list-style: none;
+}
+
+.roi-logo-grid li {
+  min-width: 92px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.roi-logo-grid img {
+  width: auto;
+  max-width: 150px;
+  max-height: 38px;
+  object-fit: contain;
+}
+
+.roi-logo-grid--ecosystem img { max-width: 165px; }
+.roi-logo-grid--integrations { gap: 34px 31px; }
+.roi-logo-grid--integrations li { flex-basis: 100px; }
+.roi-logo-grid--agencies li { flex-basis: 104px; }
+.roi-logo-grid--agencies img { max-width: 127px; max-height: 44px; }
+
+.mk-wordmark {
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.mk-wordmark b {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.mk-wordmark span {
+  width: 2px;
+  height: 28px;
+  background: linear-gradient(#dc0c9f 0 25%, #1291e2 25% 50%, #fb5b12 50% 75%, #00fc8a 75%);
+}
+
+.logo-text {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -.5px;
+}
+
+@media (max-width: 1100px) {
+  .stats-section__top {
+    grid-template-columns: minmax(330px, .8fr) minmax(500px, 1.2fr);
+    gap: 42px;
+  }
+  .stats-metric__copy h2 { white-space: normal; }
+  .stats-metric__copy p { white-space: normal; }
+  .roi-partner-row {
+    grid-template-columns: minmax(270px, 360px) minmax(0, 1fr);
+    gap: 44px;
+  }
+  .roi-logo-grid { justify-content: flex-start; }
+}
+
+@media (max-width: 800px) {
+  .partner-cta { padding: 48px 24px; }
+  .partner-cta__inner { align-items: flex-start; flex-direction: column; gap: 32px; }
+  .partner-cta__button { width: 100%; }
+
+  .stats-section { padding: 92px 24px 84px; }
+  .stats-section__top { grid-template-columns: 1fr; gap: 58px; }
+  .shopping-grid { width: min(100%, 500px); margin: 0 auto; }
+  .stats-metric { justify-content: center; }
+  .stats-metric__number { font-size: clamp(150px, 34vw, 210px); }
+  .stats-metric__copy h2 { font-size: clamp(42px, 9vw, 62px); }
+  .stats-mission { margin-top: 76px; }
+  .stats-next { font-size: 26px; }
+
+  .roi-factory { padding: 88px 24px 70px; }
+  .roi-partners { margin-top: 110px; }
+  .roi-partner-row {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    padding: 50px 0;
+  }
+  .roi-partner-row h3 { max-width: 520px; }
+  .roi-logo-grid { justify-content: flex-start; }
+}
+
+@media (max-width: 520px) {
+  .partner-cta__title { font-size: 39px; line-height: 1.05; }
+  .partner-cta__copy p { font-size: 17px; line-height: 1.25; }
+
+  .shopping-grid { gap: 7px 8px; }
+  .shopping-grid__item svg { max-width: 27px; }
+  .stats-metric { align-items: flex-end; }
+  .stats-metric__number { font-size: 42vw; }
+  .stats-metric__copy { padding: 0 0 4px 8px; }
+  .stats-metric__copy h2 { font-size: 8.5vw; line-height: 1.08; }
+  .stats-metric__copy p { max-width: 160px; font-size: 15px; }
+  .stats-mission { font-size: 29px; }
+  .stats-next { margin-top: 52px; font-size: 22px; }
+
+  .roi-factory__title { font-size: 22vw; }
+  .roi-factory__lead { font-size: 30px; }
+  .roi-factory__support { font-size: 19px; }
+  .roi-partner-row h3 { font-size: 48px; }
+  .roi-logo-grid { gap: 28px 20px; }
+  .roi-logo-grid li { flex: 1 1 120px; min-width: 0; }
+  .roi-logo-grid img { max-width: min(132px, 100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partner-cta__button { transition: none; }
+}

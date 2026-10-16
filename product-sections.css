@@ -1,0 +1,315 @@
+/* Seções reconstruídas a partir dos frames Figma de 1440 px. */
+.products-page { margin: 0; background: #fff; color: #000; }
+
+.product-section {
+  --product-accent: #dc0c9f;
+  --section-height: 1719px;
+  --copy-left: 95px;
+  --copy-top: 161px;
+  --copy-width: 519px;
+  --media-left: 823px;
+  --media-top: 161px;
+  --media-width: 377px;
+  --results-left: 97px;
+  --results-top: 858px;
+  --results-columns: 387px 242px 439px;
+  --marquee-top: 1009px;
+  --marquee-height: 55px;
+  --testimonial-left: 350px;
+  --testimonial-top: 1115px;
+  --testimonial-width: 740px;
+  --identity-width: 631px;
+  --spectrum-top: 1560px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-width: 320px;
+  background: #fff;
+  color: #000;
+}
+
+.product-section--ai-studio { --product-accent:#7eb400; --section-height:1695px; --copy-top:102px; --copy-width:440px; --media-left:804px; --media-top:102px; --media-width:442px; --results-left:95px; --results-top:875px; --results-columns:334px 348px 328px; --marquee-top:1053px; --testimonial-left:203px; --testimonial-top:1207px; --testimonial-width:1051px; --identity-width:307px; --spectrum-top:1581px; }
+.product-section--shop-look { --product-accent:#1291e2; --section-height:1689px; --copy-top:232px; --copy-width:447px; --media-left:779px; --media-top:232px; --media-width:371px; --results-left:96px; --results-top:880px; --results-columns:185px 299px 356px; --marquee-top:1060px; --testimonial-left:156px; --testimonial-top:1163px; --testimonial-width:1115px; --identity-width:364px; --spectrum-top:1539px; }
+.product-section--beauty { --product-accent:#7c16db; --section-height:1709px; --copy-top:134px; --copy-width:460px; --media-left:681px; --media-top:134px; --media-width:493px; --results-left:96px; --results-top:899px; --results-columns:354px 352px 332px; --marquee-top:1072px; --marquee-height:119px; --testimonial-left:156px; --testimonial-top:1239px; --testimonial-width:1115px; --identity-width:364px; --spectrum-top:1587px; }
+.product-section--skin { --product-accent:#7c16db; --section-height:1683px; --copy-top:220px; --copy-width:456px; --media-left:564px; --media-top:150px; --media-width:792px; --results-left:108px; --results-top:864px; --results-columns:337px 223px 389px; --marquee-top:1037px; --marquee-height:119px; --testimonial-left:168px; --testimonial-top:1204px; --testimonial-width:1115px; --identity-width:364px; --spectrum-top:1539px; }
+.product-section--shop3d { --product-accent:#1291e2; --section-height:1683px; --copy-top:181px; --copy-width:460px; --media-left:690px; --media-top:181px; --media-width:654px; --results-left:96px; --results-top:802px; --results-columns:387px 291px 223px; --marquee-top:952px; --marquee-height:90px; --testimonial-left:156px; --testimonial-top:1090px; --testimonial-width:1115px; --identity-width:364px; --spectrum-top:1539px; }
+.product-section--video-commerce { --product-accent:#7eb400; --section-height:1586px; --copy-top:161px; --copy-width:460px; --media-left:698px; --media-top:161px; --media-width:733px; --results-left:96px; --results-top:843px; --results-columns:372px 405px 87px; --marquee-top:1006px; --marquee-height:79px; --spectrum-top:1174px; }
+.product-section--home { --product-accent:#dc0c9f; --section-height:1608px; --copy-top:205px; --copy-width:507px; --media-left:648px; --media-top:205px; --media-width:749px; --results-left:89px; --results-top:865px; --results-columns:387px 312px 312px; --testimonial-left:156px; --testimonial-top:1036px; --testimonial-width:1115px; --identity-width:364px; --spectrum-top:1358px; }
+.product-section--agent { --product-accent:#b0b521; --section-height:1188px; --copy-top:73px; --copy-width:507px; --media-left:968px; --media-top:73px; --results-left:95px; --results-top:802px; --results-columns:330px 247px 390px; --marquee-top:981px; --marquee-height:61px; --spectrum-top:1137px; }
+
+.product-section__stage { position:relative; width:1440px; height:var(--section-height); margin:0 auto; }
+.product-section__wave { position:absolute; inset:-18px -160px auto 120px; height:790px; background:url('./assets/products/product-wave.svg') center/contain no-repeat; opacity:.72; pointer-events:none; }
+.product-section__copy { position:absolute; z-index:2; left:var(--copy-left); top:var(--copy-top); width:var(--copy-width); height:647px; display:flex; flex-direction:column; align-items:flex-start; gap:32px; }
+.product-section--ai-studio .product-section__copy { gap:29px; }
+.product-section__brand { display:block; width:auto; height:auto; object-fit:contain; object-position:left center; }
+.product-section--fashion .product-section__brand { width:244px; }
+.product-section--ai-studio .product-section__brand { width:217px; }
+.product-section--shop-look .product-section__brand { width:275px; }
+.product-section--beauty .product-section__brand { width:234px; height:54px; }
+.product-section--skin .product-section__brand { width:250px; }
+.product-section--shop3d .product-section__brand { width:245px; height:50px; }
+.product-section--video-commerce .product-section__brand { width:230px; height:49px; }
+.product-section--home .product-section__brand { width:258px; height:49px; }
+.product-section--agent .product-section__brand { width:261px; height:53px; }
+
+.product-section__title { width:100%; margin:0; font-family:var(--font-heading); font-style:normal; font-weight:400; line-height:.977; color:#000; text-transform:uppercase; }
+.title-line,.product-subtitle { display:block; }
+.product-section__title b,.product-section__title strong,.product-section__title em { font:inherit; color:inherit; }
+.product-section--fashion .title-line { font-size:121px; }
+.product-section--fashion .product-subtitle { margin-top:4px; font-size:50px; }
+.product-section--ai-studio .product-section__title { text-align:center; }
+.product-section--ai-studio .product-section__title b,.product-section--ai-studio .product-section__title strong,.product-section--ai-studio .product-section__title em { display:block; }
+.product-section--ai-studio .product-section__title b { font-size:83px; }
+.product-section--ai-studio .product-section__title strong { font-size:131px; }
+.product-section--ai-studio .product-section__title em { font-size:173px; }
+.product-section--shop-look .title-line { font-size:118px; }
+.product-section--shop-look .title-line--xl { font-size:223px; }
+.product-section--beauty .product-section__title b,.product-section--beauty .product-section__title strong,.product-section--skin .product-section__title b,.product-section--skin .product-section__title strong,.product-section--shop3d .product-section__title b,.product-section--shop3d .product-section__title strong,.product-section--video-commerce .product-section__title b,.product-section--video-commerce .product-section__title strong,.product-section--agent .product-section__title b,.product-section--agent .product-section__title strong { display:block; }
+.product-section--beauty .product-section__title b { font-size:118px; }
+.product-section--beauty .product-section__title strong { font-size:156px; }
+.product-section--beauty .title-line:last-child { font-size:120px; }
+.product-section--skin .product-section__title b { font-size:76px; }
+.product-section--skin .product-section__title strong { font-size:104px; }
+.product-section--skin .title-line:last-child { font-size:118px; }
+.product-section--shop3d .product-section__title b { font-size:90px; }
+.product-section--shop3d .product-section__title strong { font-size:111px; }
+.product-section--video-commerce .product-section__title b { font-size:220px; }
+.product-section--video-commerce .product-section__title strong { font-size:108px; }
+.product-section--home .product-section__title { width:540px; font-size:118px; }
+.product-section--agent .product-section__title b { font-size:112px; }
+.product-section--agent .product-section__title strong { font-size:131px; }
+
+.product-section__description { width:100%; margin:0; font-family:var(--font-body); font-size:20px; font-weight:400; line-height:25px; color:#000; }
+.product-section__description strong { font-weight:700; }
+.product-section__actions { width:100%; display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,1fr); align-items:center; gap:32px; }
+.product-button { min-width:0; height:54px; display:inline-flex; align-items:center; justify-content:center; padding:10px 20px; border:1px solid var(--product-accent); border-radius:8px; font-family:var(--font-body); font-size:16px; font-weight:900; line-height:22.4px; text-align:center; white-space:nowrap; }
+.product-button--primary { background:var(--product-accent); color:#fff; }
+.product-button--secondary { background:#fff; color:var(--product-accent); }
+.product-section--fashion .product-button--secondary { color:#1c1c1c; font-weight:500; }
+.product-section--fashion .product-button--primary { width:218px; }
+
+.product-section__media { position:absolute; z-index:1; left:var(--media-left); top:var(--media-top); width:316px; height:562px; overflow:hidden; border-radius:28px; }
+.product-video,.product-video-placeholder { display:block; width:316px; height:562px; border:0; border-radius:28px; }
+.product-video { background:#ececec; object-fit:cover; object-position:center; }
+.product-video-placeholder {
+  position:relative;
+  overflow:hidden;
+  border:1px solid #d7d7d7;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.94),rgba(235,235,238,.96)),
+    #ececef;
+  box-shadow:0 20px 60px rgba(0,0,0,.12);
+  color:#77777d;
+}
+.product-video-placeholder::before {
+  content:"";
+  position:absolute;
+  inset:-35%;
+  background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.9) 48%,transparent 61%);
+  transform:translateX(-65%);
+  animation:product-placeholder-shimmer 2.8s ease-in-out infinite;
+}
+.product-video-placeholder::after {
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:54px;
+  height:54px;
+  border:1px solid rgba(0,0,0,.13);
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:linear-gradient(145deg,#fff,#e1e1e5);
+  box-shadow:0 8px 24px rgba(0,0,0,.1);
+}
+.product-video-placeholder span {
+  position:absolute;
+  z-index:2;
+  left:0;
+  right:0;
+  bottom:28px;
+  font-family:var(--font-body);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-align:center;
+  text-transform:uppercase;
+}
+@keyframes product-placeholder-shimmer {
+  0%,20% { transform:translateX(-65%); }
+  70%,100% { transform:translateX(65%); }
+}
+
+.product-results { position:absolute; z-index:3; left:var(--results-left); top:var(--results-top); width:1248px; min-height:102px; margin:0; padding:25px 36px; display:grid; grid-template-columns:var(--results-columns); align-items:center; justify-content:space-between; gap:24px; border:1px solid #dadada; border-radius:24px; background:#fff; list-style:none; }
+.product-section--fashion .product-results,.product-section--ai-studio .product-results { padding-block:27px; }
+.product-results li { min-width:0; font-family:var(--font-heading); font-size:24px; font-style:normal; font-weight:400; line-height:.977; color:#000; }
+.product-results em { color:var(--product-accent); font-style:normal; }
+.product-results small { display:block; margin-top:3px; color:var(--product-accent); font:inherit; }
+.product-results .metric-xl { font-size:48px; }
+
+.product-logo-marquee { position:absolute; z-index:3; left:0; top:var(--marquee-top); width:1440px; height:var(--marquee-height); display:flex; align-items:center; overflow:hidden; }
+.product-logo-track { display:flex; width:max-content; will-change:transform; animation:product-logo-marquee 42s linear infinite; }
+.product-logo-marquee:hover .product-logo-track { animation-play-state:paused; }
+.product-logo-set { display:flex; align-items:center; gap:10px; padding-right:10px; list-style:none; }
+.product-logo-set li { flex:0 0 87.917px; width:87.917px; height:54.948px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.product-logo-set img { display:block; width:auto; max-width:87.917px; height:auto; max-height:54.948px; object-fit:contain; }
+.product-section--beauty .product-logo-set,.product-section--skin .product-logo-set { width:1434px; justify-content:space-between; padding:24px; }
+.product-section--beauty .product-logo-set li,.product-section--skin .product-logo-set li { flex-basis:189px; width:189px; height:51px; }
+.product-section--beauty .product-logo-set img,.product-section--skin .product-logo-set img { max-width:189px; max-height:51px; }
+.product-section--shop3d .product-logo-set { gap:57px; padding:24px; }
+.product-section--shop3d .product-logo-marquee { mix-blend-mode:exclusion; }
+.product-section--video-commerce .product-logo-set,.product-section--agent .product-logo-set { width:1440px; justify-content:space-between; padding-inline:0; }
+.product-section--video-commerce .product-logo-set li,.product-section--agent .product-logo-set li { height:30px; }
+.product-section--video-commerce .product-logo-set img,.product-section--agent .product-logo-set img { max-height:30px; }
+@keyframes product-logo-marquee { from { transform:translate3d(0,0,0); } to { transform:translate3d(-50%,0,0); } }
+
+.product-testimonial {
+  position:absolute;
+  z-index:4;
+  left:156px;
+  top:var(--testimonial-top);
+  width:1115px;
+  min-height:220px;
+  display:flex;
+  align-items:center;
+  isolation:isolate;
+  font-family:var(--font-body);
+}
+.product-testimonial::after {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  left:88px;
+  right:-24px;
+  bottom:-38px;
+  height:116px;
+  border-radius:50%;
+  background:linear-gradient(90deg,rgba(124,22,219,.22),rgba(220,12,159,.2) 23%,rgba(18,145,226,.2) 46%,rgba(251,91,18,.18) 67%,rgba(0,252,138,.2) 86%,rgba(232,241,2,.14));
+  filter:blur(34px);
+  opacity:.78;
+  pointer-events:none;
+}
+.product-testimonial__identity {
+  position:relative;
+  z-index:2;
+  flex:0 0 420px;
+  min-height:192px;
+  padding:28px 22px 26px 126px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  column-gap:18px;
+  background:#000;
+  border:1px solid #171717;
+  border-radius:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,.38);
+  color:#fff;
+}
+.product-testimonial__avatar {
+  position:absolute;
+  left:-56px;
+  top:24px;
+  width:144px;
+  height:144px;
+  padding:6px;
+  border-radius:50%;
+  background:conic-gradient(
+    #7c16db 0deg 45deg,
+    #dc0c9f 45deg 90deg,
+    #fb5b12 90deg 135deg,
+    #e8f102 135deg 180deg,
+    #00fc8a 180deg 225deg,
+    #1291e2 225deg 270deg,
+    #7c16db 270deg 315deg,
+    #dc0c9f 315deg 360deg
+  );
+  box-shadow:0 8px 26px rgba(0,0,0,.28);
+}
+.product-testimonial__avatar img {
+  display:block;
+  width:100%;
+  height:100%;
+  border:3px solid #050505;
+  border-radius:50%;
+  object-fit:cover;
+}
+.product-testimonial__person { min-width:0; display:flex; flex-direction:column; gap:6px; }
+.product-testimonial__person p { margin:0; font-size:18px; line-height:1.15; text-transform:uppercase; }
+.product-testimonial__person span { font-size:14px; line-height:1.2; }
+.product-testimonial__person small { color:#8d8d8d; font-size:13px; line-height:1.2; }
+.product-testimonial__company {
+  max-width:112px;
+  font-size:22px;
+  font-weight:700;
+  line-height:1.05;
+  letter-spacing:.04em;
+  text-align:center;
+  text-transform:uppercase;
+}
+.product-testimonial blockquote {
+  position:relative;
+  z-index:1;
+  flex:1 1 auto;
+  min-height:192px;
+  margin:0 0 0 -24px;
+  padding:32px 38px 32px 62px;
+  display:flex;
+  align-items:center;
+  border:1px solid rgba(0,0,0,.035);
+  border-radius:0 24px 24px 0;
+  background:linear-gradient(108deg,#fff 0%,#fff 52%,#f6f0fa 70%,#f2f8f7 100%);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+  color:#1c1c1c;
+  font-size:16px;
+  font-weight:400;
+  line-height:1.2;
+  text-align:left;
+}
+
+.product-section__spectrum { position:absolute; z-index:5; left:254px; top:var(--spectrum-top); width:915px; height:5px; background:linear-gradient(90deg,rgba(124,22,219,0) 0%,rgba(220,12,159,.83) 20%,#1291e2 40%,#fb5b12 60%,#00fc8a 80%,rgba(232,241,2,0) 100%); }
+
+@media (max-width:1439px) and (min-width:1281px) { .product-section__stage { left:50%; margin-left:-720px; } }
+
+@media (max-width:1280px) {
+  .product-section { overflow:hidden; }
+  .product-section__stage { width:100%; height:auto; padding:76px 20px 100px; }
+  .product-section__wave { inset:420px -65% auto -5%; width:165%; height:720px; }
+  .product-section__copy,.product-section__media,.product-results,.product-logo-marquee,.product-testimonial,.product-section__spectrum { position:relative; left:auto; top:auto; }
+  .product-section__copy { width:min(100%,560px); height:auto; margin:0 auto; gap:28px; }
+  .product-section__brand { max-width:min(62vw,275px); }
+  .product-section__title,.product-section__title b,.product-section__title strong,.product-section__title em,.product-section--home .product-section__title,.product-section--fashion .title-line,.product-section--fashion .product-subtitle,.product-section--shop-look .title-line,.product-section--shop-look .title-line--xl,.product-section--beauty .title-line:last-child,.product-section--skin .title-line:last-child { width:100%; font-size:clamp(48px,16vw,92px); line-height:.98; text-align:left; }
+  .product-section--fashion .product-subtitle { font-size:clamp(30px,9vw,48px); }
+  .product-section--ai-studio .product-section__title { text-align:left; }
+  .product-section__description { font-size:18px; line-height:1.35; }
+  .product-section__actions { gap:14px; }
+  .product-section__media { width:min(316px,calc(100vw - 40px)); height:auto; aspect-ratio:316/562; margin:48px auto 0; border-radius:24px; }
+  .product-video,.product-video-placeholder { width:100%; height:100%; border-radius:24px; }
+  .product-results { width:min(100%,560px); min-height:0; margin:48px auto 0; padding:28px; grid-template-columns:1fr; gap:26px; }
+  .product-results li { font-size:23px; }
+  .product-logo-marquee { width:calc(100% + 40px); height:max(78px,var(--marquee-height)); margin:38px -20px 0; }
+  .product-testimonial { width:min(100%,560px); min-height:0; margin:48px auto 0; }
+  .product-testimonial__identity { flex-basis:44%; min-height:174px; padding:24px 16px 22px 100px; border-radius:20px; }
+  .product-testimonial__avatar { left:-16px; top:31px; width:112px; height:112px; padding:5px; }
+  .product-testimonial__person p { font-size:16px; }
+  .product-testimonial__person span,.product-testimonial__person small { font-size:12px; }
+  .product-testimonial__company { max-width:82px; font-size:17px; }
+  .product-testimonial blockquote { min-height:174px; padding:26px 26px 26px 44px; font-size:14px; border-radius:0 20px 20px 0; }
+  .product-section__spectrum { width:72%; height:5px; margin:86px auto 0; }
+}
+
+@media (max-width:520px) {
+  .product-section__actions { grid-auto-flow:row; grid-auto-rows:54px; }
+  .product-button,.product-section--fashion .product-button--primary { width:100%; }
+  .product-results { padding:24px 22px; }
+  .product-testimonial { flex-direction:column; align-items:stretch; padding-top:52px; }
+  .product-testimonial::after { left:8%; right:8%; bottom:-20px; height:90px; }
+  .product-testimonial__identity { flex-basis:auto; width:100%; min-height:148px; padding:28px 20px 24px 112px; border-radius:22px; }
+  .product-testimonial__avatar { left:18px; top:-52px; width:116px; height:116px; }
+  .product-testimonial__company { margin-left:auto; }
+  .product-testimonial blockquote { width:calc(100% - 20px); min-height:0; margin:-18px auto 0; padding:46px 24px 28px; border-radius:0 0 22px 22px; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .product-logo-track { animation-play-state:paused; }
+  .product-video-placeholder::before { animation:none; }
+}

@@ -1,0 +1,16 @@
+# Arquivos locais de validação e prévias
+*-1440.png
+*-390.png
+*-verified.png
+*-test-report.json
+*-test-output.txt
+home-audit-report.json
+home-full-order-1440.png
+audit-home.cjs
+render-*.cjs
+validate-*.cjs
+validate-*.py
+
+# Pastas temporárias
+.github-sync/
+github-sync/

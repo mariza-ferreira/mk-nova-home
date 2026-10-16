@@ -1,0 +1,24 @@
+/* Helvetica Neue Bold é carregada pelo CSS global. */
+/* Complementa o espaço inferior já existente no Hero. */
+.media-validation { padding: 3px 0 72px; background: var(--color-secondary, #000000); }
+.media-validation-container { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; max-width: 1280px; margin: 0 auto; padding: 0 14px; }
+.media-validation-title { margin: 0; color: var(--color-white, #ffffff); font-family: var(--font-body, 'Helvetica Neue', Arial, sans-serif); font-size: 12px; font-weight: 700; line-height: 25px; }
+/* Gap exato: 20px; cada bloco preserva 76 × 76px ao quebrar linha. */
+.media-validation-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin: 0; padding: 0; list-style: none; }
+.media-validation-logo { display: grid; place-items: center; flex: 0 0 76px; width: 76px; height: 76px; border-radius: 16px; }
+/* Não aplicar filtros: o Figma mantém as cores originais. */
+.media-validation-logo img { display: block; max-width: none; filter: none; opacity: 1; }
+.media-validation-logo--forbes { border: 1px solid var(--color-border-muted, #696969); }
+.media-validation-logo--image { overflow: hidden; }
+.media-validation-logo--image img { width: 76px; height: 76px; object-fit: cover; border-radius: 16px; }
+.media-validation-logo--ecbr { background: var(--color-media-blue, #004993); }
+.media-validation-logo--mundo { background: var(--color-media-navy, #0a0b20); }
+@media (max-width: 1100px) {
+  .media-validation { padding: 0 0 64px; }
+  .media-validation-container { max-width: 760px; padding: 0 24px; }
+}
+@media (max-width: 600px) {
+  .media-validation { padding-bottom: 48px; }
+  .media-validation-container { padding: 0 20px; }
+}
+

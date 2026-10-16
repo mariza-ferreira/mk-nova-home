@@ -1,0 +1,104 @@
+/* GLOBAL: Anton é usada nos títulos do contexto selecionado. */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* Helvetica Neue local: arquivos fornecidos para os pesos do Figma. */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HelveticaNeueRoman.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HelveticaNeueBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HelveticaNeueBlack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --font-ui: Arial, sans-serif;
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-heading: 'Anton', Impact, sans-serif;
+  --color-primary: #dc0c9f;
+  --color-secondary: #000000;
+  --color-white: #ffffff;
+  --color-media-blue: #004993; /* Cor presente na mídia; não inferida como cor de marca. */
+  --color-media-navy: #0a0b20;
+  --color-border-muted: #696969;
+  --color-header: rgba(0, 0, 0, .84);
+  --color-panel: rgba(12, 12, 12, .96);
+  --color-nav: rgba(255, 255, 255, .82);
+  --color-panel-text: rgba(255, 255, 255, .8);
+  --color-muted: rgba(255, 255, 255, .5);
+  --color-border: rgba(255, 255, 255, .06);
+  --color-panel-border: rgba(255, 255, 255, .08);
+  --color-social-border: rgba(255, 255, 255, .1);
+  --container-width: 1320px;
+  --header-height: 76px;
+  --radius-control: 8px;
+}
+/* Reset de layout, sem remover indicadores de foco. */
+*, *::before, *::after { box-sizing: border-box; }
+body, h1, h2, h3, p, ul, ol { margin: 0; padding: 0; }
+body { min-width: 320px; background: var(--color-secondary); color: var(--color-white); font-family: var(--font-body); }
+img { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; }
+button, a, summary { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; }
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 4px; }
+/* HEADER: apenas navegação; o hero será implementado em outra etapa. */
+.site-header { position: relative; z-index: 100; height: var(--header-height); background: var(--color-header); border-bottom: 1px solid var(--color-border); backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px); font-family: var(--font-ui); }
+.header-container { max-width: var(--container-width); height: 100%; padding: 0 16px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+/* Composição dos quatro SVGs originais, com dimensões nativas. */
+.brand { position: relative; display: block; flex: 0 0 73.183px; width: 73.183px; height: 36.078px; }
+.brand img { position: absolute; max-width: none; }
+.brand-m { left: 0; top: 0; }
+.brand-k { left: 25.505px; top: 0; }
+.brand-accent { left: 66.252px; top: 0; }
+.brand-name { left: 0; top: 30.41px; }
+.header-menu { display: flex; align-items: center; justify-content: space-between; flex: 1; gap: 24px; max-width: 1098px; }
+.primary-nav { display: flex; align-items: center; gap: 2px; }
+.nav-link, .dropdown > summary { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: var(--radius-control); font-size: 14px; font-weight: 400; line-height: 14px; color: var(--color-nav); white-space: nowrap; cursor: pointer; }
+.dropdown > summary { list-style: none; }
+.dropdown > summary::-webkit-details-marker { display: none; }
+.dropdown > summary img { flex: 0 0 auto; }
+.nav-link:hover, .dropdown > summary:hover, .social-link:hover { background: rgba(255,255,255,.06); }
+.dropdown[open] > summary img { transform: rotate(180deg); }
+/* Os dois painéis foram encontrados no Figma em estado fechado. */
+.mega-menu { position: absolute; inset: var(--header-height) 0 auto; padding: 24px 0 30px; background: var(--color-panel); border-top: 1px solid var(--color-panel-border); backdrop-filter: blur(32.5px); -webkit-backdrop-filter: blur(32.5px); }
+.mega-container { max-width: var(--container-width); padding: 0 16px; margin: 0 auto; display: grid; grid-template-columns: minmax(0,3fr) minmax(0,1fr) minmax(0,1fr); gap: 44px; }
+.mega-heading { font-size: 12px; font-weight: 400; line-height: 19.2px; color: var(--color-muted); margin-bottom: 10px; }
+.mega-link { display: block; padding: 3px 0; border-radius: 8px; font-size: 12px; line-height: 24px; letter-spacing: .12px; color: var(--color-panel-text); }
+.mega-feature { padding: 1px 0; font-size: 15.9px; font-weight: 700; line-height: 32px; letter-spacing: 0; color: var(--color-white); }
+.mega-link:hover { text-decoration: underline; }
+.social-links { display: flex; align-items: center; gap: 2px; padding-left: 14px; border-left: 1px solid var(--color-social-border); }
+.social-link { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; }
+.header-cta { padding: 9.5px 20px 9.89px; border-radius: 8px; background: var(--color-primary); color: var(--color-white); font-size: 14px; line-height: 22.4px; white-space: nowrap; }
+.header-cta:hover { filter: brightness(1.1); }
+/* Checkbox nativo: menu mobile operável com teclado, sem JavaScript. */
+.menu-toggle, .hamburger { display: none; }
+/* Breakpoint de adaptação: não há variante mobile no contexto selecionado. */
+@media (max-width: 1100px) {
+  .menu-toggle { display: block; position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); }
+  .hamburger { display: flex; width: 44px; height: 44px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; border: 1px solid var(--color-social-border); border-radius: 8px; cursor: pointer; }
+  .hamburger span { width: 20px; height: 2px; background: var(--color-white); }
+  .menu-toggle:focus-visible + .hamburger { outline: 2px solid var(--color-primary); outline-offset: 4px; }
+  .header-menu { display: none; position: absolute; top: var(--header-height); left: 0; right: 0; padding: 16px; background: var(--color-panel); border-bottom: 1px solid var(--color-panel-border); max-height: calc(100dvh - var(--header-height)); overflow-y: auto; }
+  .menu-toggle:checked ~ .header-menu { display: flex; flex-direction: column; align-items: stretch; gap: 20px; }
+  .primary-nav { flex-direction: column; align-items: stretch; }
+  .nav-link, .dropdown > summary { min-height: 44px; white-space: normal; }
+  .mega-menu { position: static; padding: 16px 0; backdrop-filter: none; }
+  .mega-container { grid-template-columns: 1fr; gap: 20px; padding: 0 12px; }
+  .mega-link { overflow-wrap: anywhere; }
+  .social-links { align-self: flex-start; padding-left: 0; border-left: 0; }
+  .social-link { width: 44px; height: 44px; }
+  .header-cta { text-align: center; white-space: normal; }
+}
+

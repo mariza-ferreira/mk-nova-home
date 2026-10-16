@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon">
+<rect id="Rectangle" x="4.75" y="10.75" width="14.5" height="10.5" rx="1.25" stroke="white" stroke-width="1.5"/>
+<path id="Ellipse" d="M12 4.75C12.958 4.75 13.7969 5.042 14.3789 5.47852C14.9605 5.91483 15.25 6.46064 15.25 7C15.25 7.53936 14.9605 8.08517 14.3789 8.52148C13.7969 8.958 12.958 9.25 12 9.25C11.042 9.25 10.2031 8.958 9.62109 8.52148C9.03946 8.08517 8.75 7.53936 8.75 7C8.75 6.46064 9.03946 5.91483 9.62109 5.47852C10.2031 5.042 11.042 4.75 12 4.75Z" stroke="white" stroke-width="1.5"/>
+</g>
+</svg>
